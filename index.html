@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Clock</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section class="quote_wrapper">
+      <div class="container">
+        <p id="quote_container"></p>
+        <i class="fa-solid fa-rotate"></i>
+      </div>
+      <h6 id="author_container"></h6>
+    </section>
+    <section class="time_wrapper">
+      <div class="container">
+        <i id="day_symbol" class="fa-solid fa-moon fa-sun"></i>
+        <h5><span>Good </span>It's currently</h5>
+      </div>
+      <h1 id="time_slot"><span id="hr_slot">10</span>:<span id="min_slot">45</span>:<span id="sec_slot">30</span><span id="ampm">am</span></h1>
+      <h3 id="day_slot">Monday</h3>
+    </section>
+  </main>
+    
+  <script src="quotes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

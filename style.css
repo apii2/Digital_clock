@@ -1,0 +1,87 @@
+:root{
+  --Lato: "Lato", sans-serif;
+}
+
+*{
+  font-family: var(--Lato);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+  background: url('sun-5685447_1280.jpg') no-repeat fixed;
+  background-size: cover;
+}
+
+main{
+  height: 100vh;
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote_wrapper{
+  padding-top: 5rem;
+}
+
+.quote_wrapper .container{
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  opacity: 0.8;
+}
+
+.quote_wrapper .container p{
+  padding-bottom: 1.2rem;
+  line-height: 22px;
+  word-spacing: 2px;
+}
+
+.quote_wrapper .container i{
+  padding: 3px;
+}
+
+.quote_wrapper > h6{
+  font-size: 1rem;
+}
+
+.time_wrapper{
+  padding-bottom: 7rem;
+  text-transform: uppercase;
+}
+
+.time_wrapper .container{
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  align-items: center;
+}
+
+.time_wrapper .container i,.time_wrapper .container h5{
+  font-size: 1rem;
+  font-weight: 300;
+  word-spacing: 3px;
+  letter-spacing: 4px;
+}
+
+#time_slot{
+  font-size: 5rem;
+}
+
+#time_slot span#ampm{
+  font-size: 1.5rem;
+  padding-left: 0.8rem;
+  opacity: 0.8;
+}
+
+#day_slot{
+  font-size: 1.3rem;
+  letter-spacing: 8px;
+}
+
+#author_container, #day_slot, #time_slot{
+  font-weight: bold;
+}
