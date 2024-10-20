@@ -7,12 +7,7 @@
   color: white;
   margin: 0;
   padding: 0;
-}
-
-body{
   box-sizing: border-box;
-  background: url('sun-5685447_1280.jpg') no-repeat fixed;
-  background-size: cover;
 }
 
 main{
@@ -21,6 +16,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: background 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .quote_wrapper{
@@ -84,4 +80,46 @@ main{
 
 #author_container, #day_slot, #time_slot{
   font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+.morningFadeIn{
+  background: url('sun-5685447_1280.jpg') no-repeat fixed;
+  background-size: cover;
+  animation: fadeIn 1s ease-in;
+}
+
+.morningFadeOut{
+  background: url('sun-5685447_1280.jpg') no-repeat fixed;
+  background-size: cover;
+  animation: fadeOut 1s ease-in;
+}
+
+.eveningFadeIn{
+  background: url('grass-5212125_1280.jpg') no-repeat fixed;
+  background-size: cover;
+  animation: fadeIn 1s ease-in;
+}
+
+.eveningFadeOut{
+  background: url('grass-5212125_1280.jpg') no-repeat fixed;
+  background-size: cover;
+  animation: fadeOut 1s ease-in;
 }
