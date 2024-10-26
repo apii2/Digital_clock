@@ -3,7 +3,7 @@ generateDate();
 setInterval(generateDate,1000);
 
 function generateDate(){
-  let dt = new Date(Date.now());
+  let dt = new Date(2024,9,23,9,23,45);
   let h = dt.getHours();
   let m = dt.getMinutes().toString().padStart(2,"0");
   let s = dt.getSeconds().toString().padStart(2,"0");
@@ -37,6 +37,7 @@ function generateDate(){
 
   bg_animation(greeting);
 
+  document.querySelector("#day_symbol").classList.remove(cls);
   document.querySelector("h5 span").innerHTML = "Good " + greeting + ", ";
   document.querySelector("#hr_slot").innerHTML = hour12;
   document.querySelector("#min_slot").innerHTML = m;

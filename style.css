@@ -12,15 +12,17 @@
 
 main{
   height: 100vh;
-  padding: 0 10rem;
+  padding: 5rem 10rem 7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: background 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.quote_wrapper{
-  padding-top: 5rem;
+@media (max-width: 425px){
+  main{
+    padding: 3rem 2rem 6rem !important;
+  }
 }
 
 .quote_wrapper .container{
@@ -31,12 +33,24 @@ main{
   opacity: 0.8;
 }
 
-.quote_wrapper .container p{
-  padding-bottom: 1.2rem;
-  line-height: 22px;
-  word-spacing: 2px;
+@media (max-width: 425px){
+  .quote_wrapper .container{
+    grid-template-columns: 90% 1fr;
+  }
 }
 
+.quote_wrapper .container p{
+  padding-bottom: 0.6rem;
+}
+
+@media (min-width: 426px) {
+  .quote_wrapper .container p{
+    padding-bottom: 1.2rem;
+    line-height: 22px;
+    word-spacing: 2px;
+  }
+}
+  
 .quote_wrapper .container i{
   padding: 3px;
 }
@@ -45,8 +59,13 @@ main{
   font-size: 1rem;
 }
 
+@media (max-width: 425px) {
+  .quote_wrapper .container, .quote_wrapper > h6{
+    font-size: 14px;
+  }
+}
+
 .time_wrapper{
-  padding-bottom: 7rem;
   text-transform: uppercase;
 }
 
@@ -54,6 +73,14 @@ main{
   display: grid;
   grid-template-columns: 1.6rem 1fr;
   align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 425px) {
+  .time_wrapper .container{
+    margin-bottom: 0.6rem;
+    align-items: baseline;
+  }
 }
 
 .time_wrapper .container i,.time_wrapper .container h5{
@@ -63,8 +90,26 @@ main{
   letter-spacing: 4px;
 }
 
+@media (max-width: 425px) {
+  .time_wrapper .container i,.time_wrapper .container h5{
+    word-spacing: 2px;
+    font-size: 14px;
+  }
+
+  .time_wrapper .container h5 span{
+    display: block;  
+    margin-bottom: 0.2rem;  
+  }
+}
+
 #time_slot{
   font-size: 5rem;
+}
+
+@media (max-width: 425px) {
+  #time_slot{
+    font-size: 3.6rem;
+  }
 }
 
 #time_slot span#ampm{
@@ -73,9 +118,24 @@ main{
   opacity: 0.8;
 }
 
+@media (max-width: 425px) {
+  #time_slot span#ampm{
+    font-size: 1rem;
+    padding-left: 0;
+  }
+}
+
 #day_slot{
   font-size: 1.3rem;
   letter-spacing: 8px;
+}
+
+@media (max-width: 425px) {
+  #day_slot{
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin-top: 0.6rem;
+  }
 }
 
 #author_container, #day_slot, #time_slot{

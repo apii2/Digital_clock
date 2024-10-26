@@ -10,5 +10,9 @@ This is a simple digital clock built using HTML, CSS, and JavaScript. The clock 
 
 ## Demo
 
+### Desktop View
 ![Digital Clock Morning Preview](./screenshot.png)
-![Digital Clock Evening Preview](image.png)
+![Digital Clock Evening Preview](./image.png)
+### Mobile View
+![Digital Clock Evening Preview](./morn.png)
+![Digital Clock Evening Preview](./eve.png)
