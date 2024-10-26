@@ -3,7 +3,7 @@ generateDate();
 setInterval(generateDate,1000);
 
 function generateDate(){
-  let dt = new Date(2024,9,23,9,23,45);
+  let dt = new Date(Date.now());
   let h = dt.getHours();
   let m = dt.getMinutes().toString().padStart(2,"0");
   let s = dt.getSeconds().toString().padStart(2,"0");
